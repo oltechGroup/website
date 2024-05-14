@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/oltech.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre nuestros servicios integrales y suministros médicos de primera calidad a precios competitivos. Estamos comprometidos con ofrecer lo mejor en atención médica para satisfacer tus necesidades."
+    />
+    <meta
+      name="keywords"
+      content="oltech, insumos médicos, material de osteosintesis, osteosintesis"
+    />
+    <meta name="author" content="Oltech" />
+    <meta name="robots" content="index, follow" />
+    <title>Oltech - Insumos Médicos</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+        composerPlaceholder: "Escribe un mensaje...",
+        botConversationDescription: "Listo para ayudarte",
+        botId: "14ffaaf4-6087-41ad-9e8a-cb53be47b380",
+        hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+        messagingUrl: "https://messaging.botpress.cloud",
+        clientId: "14ffaaf4-6087-41ad-9e8a-cb53be47b380",
+        webhookId: "d18fc149-4d40-45ff-bc79-cbfcbb62ef7b",
+        lazySocket: true,
+        themeName: "prism",
+        botName: "Oltech",
+        stylesheet:
+          "https://webchat-styler-css.botpress.app/prod/a09fc664-5aeb-4bab-ad0b-f4062b045590/v95574/style.css",
+        frontendVersion: "v1",
+        useSessionStorage: true,
+        enableConversationDeletion: true,
+        theme: "prism",
+        themeColor: "#2563eb",
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

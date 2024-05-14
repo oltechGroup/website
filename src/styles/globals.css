@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-purple: #8300EA;
+  --color-yellow: #EAA800;
+  --color-blue: #197DF0;
+  --color-pink: #FF647D;
+  --text-white: #f7f7f7;
+  --text-white-secondary: #ffffffd0;
+  --text-black: #000000d0;
+  --text-black-secondary: #0000008e;
+
+  color: var(--text-black);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 2.4em;
+  line-height: 1.1;
+  color: var(--text-black);
+}
+p {
+  color: var(--text-black-secondary);
+}
+button {
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(0.95);
+}
+button:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-purple);
+  opacity: 0.5;
+  color: #fff;
+}
+button:disabled:active {
+  transform: scale(1);
+}
+
+.button-primary {
+  color: #B100DE;
+  background-color: #fff;
+}
+
+.button-fill {
+  background-color: var(--color-purple);
+  color: #fff;
+}
+/* Button outline */
+  .button-outline {
+    background-color: transparent;
+    border-color: #ffffff72;
+    color: #fff;
+  }
+  .outline-color {
+    border-color: var(--color-purple);
+    color: var(--color-purple);
+  }
+  
+  .button-outline:hover {
+    border-color: #fff;
+    box-shadow: inset 0 -3.25em 0 0 #fff;
+    color: #B100DE;
+  }
+
+  .outline-color:hover {
+    border-color: var(--color-purple);
+    color: #fff;
+    box-shadow: inset 0 -3.25em 0 0 var(--color-purple);
+  }
+/* End Button Outline */
+
+.icon-whatsapp__oltech {
+  position: fixed;
+  bottom: 100px;
+  right: 38px;
+  z-index: 10;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 0.6rem;
+}
+.icon-whatsapp__oltech img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Inputs */
+  
+/* End Inputs */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    line-height: normal;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,30 @@
+.page-404 {
+  margin-top: 5.5rem;
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  height: calc(100vh - 5.5rem);
+  background-image: url("../assets/ttten.svg");
+}
+
+.page-404 h2 {
+  font-weight: normal;
+}
+
+.sections {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

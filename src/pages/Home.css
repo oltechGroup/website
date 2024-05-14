@@ -1,0 +1,98 @@
+/* Background Section Home */
+  .section-home__overflow {
+    position: relative;
+    background: linear-gradient(45deg, #8300EA, #B200DE);
+    min-height: 100vh;
+    height: max-content;
+    overflow: hidden;
+  }
+  .vector-brackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+  }
+/* End Background Section Home */
+
+/* Content Section Home */
+  .section-home {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 3rem;
+  }
+  .section-home__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 3rem;
+  }
+  .section-home__parragrahps {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3em;
+  }
+  .section-home__parragrahps .title {
+    font-size: 4rem;
+    color: var(--text-white);
+  }
+  .section-home__parragrahps .subtitle {
+    color: var(--text-white-secondary);
+  }
+  .section-home__parragrahps .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .section-home__image {
+    width: 42%;
+  }
+
+  /* Responsive */
+    @media screen and (max-width: 975px) {
+      .section-home__overflow {
+        min-height: max-content;
+      }
+      .section-home {
+        padding: 0 1rem;
+      }
+      .section-home__content {
+        padding-top: 10rem;
+        flex-direction: column;
+        height: max-content;
+        gap: 3rem;
+        text-align: center;
+      }
+      .section-home__parragrahps {
+        width: 100%;
+        margin-top: 0rem;
+        align-items: center;
+        gap: 3rem;
+      }
+      .section-home__image {
+        width: 80%;
+        max-width: 500px;
+      }
+    }
+
+    @media screen and (max-width: 490px) {
+      .vector-brackground {
+        height: auto;
+        width: 100%;
+      }
+      .section-home__parragrahps .title {
+        font-size: 3.5rem;
+        line-height: 1.2;
+      }
+      .oltech-logo{
+        height: auto;
+        width: 10rem;
+      }
+    }
+
+  /* End Responsive */
+  
+/* End Section Home */

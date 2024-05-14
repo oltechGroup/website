@@ -1,0 +1,329 @@
+.canvas__overflow {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+}
+.canvas__svg {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.canvas__container {
+  position: relative;
+  max-width: 77rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 6rem;
+  z-index: 100;
+}
+
+/* First Section */
+  .canvas__section__presentation {
+    min-height: 100vh;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+  .canvas__section__presentation .parragraph {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-right: 6rem;
+  }
+  .canvas__section__presentation .title {
+    font-size: 4rem;
+    color: #3C2749;
+    text-align: end;
+  }
+/* End First Section */
+
+.hidden {
+  opacity: 0;
+}
+
+/* Sections Description  */
+  .canvas__section__description {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  /* Item description */
+    .canvas__section__description .item {
+      position: absolute;
+      width: 19rem;
+      transform: translateY(100%);
+    }
+    .canvas__section__description .item .arrow {
+      position: absolute;
+    }
+    .canvas__section__description .item h3 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+  /* End Item Description */
+/* End Sections Description */
+
+
+/* Maxilofacial */
+  .canvas__section__description.maxilo .item:nth-child(1) {
+    top: 17%;
+    left: 17%;
+  }
+  .canvas__section__description.maxilo .item:nth-child(1) .arrow {
+    top: 26%;
+  }
+
+  .canvas__section__description.maxilo .item:nth-child(2) {
+    bottom: 20%;
+    left: 32%;
+  }
+  .canvas__section__description.maxilo .item:nth-child(2) .arrow {
+    bottom: 23%;
+  }
+/* End Maxilofacial */
+
+/* Columna */
+  .canvas__section__description.columna .item:nth-child(1) {
+    top: 25%;
+    right: 26%;
+  }
+  .canvas__section__description.columna .item:nth-child(1) .arrow {
+    top: 26%;
+    right: 10%;
+  }
+/* End Columna */
+
+/* Toracico */
+  .canvas__section__description.taracico .item:nth-child(1) {
+    top: 19%;
+    left: 25%;
+  }
+  .canvas__section__description.taracico .item:nth-child(1) .arrow {
+    top: 35%;
+  }
+
+  .canvas__section__description.taracico .item:nth-child(2) {
+    bottom: 20%;
+    left: 19%;
+  }
+  .canvas__section__description.taracico .item:nth-child(2) .arrow {
+    bottom: 65%;
+  }
+/* End Toracico */
+
+/* Brazos */
+  .canvas__section__description.brazos .item:nth-child(1) {
+    top: 18%;
+    right: 25%;
+  }
+  .canvas__section__description.brazos .item:nth-child(1) .arrow {
+    right: -10%;
+    top: -20%;
+  }
+
+  .canvas__section__description.brazos .item:nth-child(2) {
+    top: 42%;
+    right: 23%;
+  }
+  .canvas__section__description.brazos .item:nth-child(2) .arrow {
+    top: -30%;
+    right: 5%;
+  }
+
+  .canvas__section__description.brazos .item:nth-child(3) {
+    bottom: 10%;
+    right: 17%;
+  }
+  .canvas__section__description.brazos .item:nth-child(3) .arrow {
+    right: -10%;
+    bottom: 65%;
+  }
+/* End Brazos */
+
+/* Cadera */
+  .canvas__section__description.cadera .item:nth-child(1) {
+    top: 50%;
+    left: 10%;
+  }
+  .canvas__section__description.cadera .item:nth-child(1) .arrow {
+    bottom: 70%;
+  } 
+/* End Cadera */
+
+/* Mano */
+  .canvas__section__description.mano .item:nth-child(1) {
+    top: 20%;
+    right: 21%;
+  }
+  .canvas__section__description.mano .item:nth-child(1) .arrow {
+    top: -20%;
+    right: 10%;
+  }
+
+  .canvas__section__description.mano .item:nth-child(2) {
+    bottom: 30%;
+    left: 12%;
+  }
+  .canvas__section__description.mano .item:nth-child(2) .arrow {
+    top: -70%;
+  }
+/* End Mano */
+
+/* Pierna */
+  .canvas__section__description.pierna .item:nth-child(1) {
+    top: 30%;
+    right: 5%;
+  }
+  .canvas__section__description.pierna .item:nth-child(1) .arrow {
+    right: 0;
+    top: -30%;
+  }
+
+  .canvas__section__description.pierna .item:nth-child(2) {
+    bottom: 15%;
+    left: 15%;
+  }
+  .canvas__section__description.pierna .item:nth-child(2) .arrow {
+    top: 35%;
+  }
+/* End Pierna */
+
+/* Pies */
+  .canvas__section__description.pies .item:nth-child(1) {
+    bottom: 55%;
+    left: 10%;
+  }
+  .canvas__section__description.pies .item:nth-child(1) .arrow {
+    top: 35%;
+  }
+
+  .canvas__section__description.pies .item:nth-child(2) {
+    bottom: 30%;
+    right: 5%;
+  }
+  .canvas__section__description.pies .item:nth-child(2) .arrow {
+    right: -5%;
+  }
+/* End Pies */
+
+@media screen and (max-width: 1050px) {
+  .canvas__svg {
+    position: fixed;
+  }
+
+  .canvas__container {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 975px) {
+
+  /* First Section */
+    .canvas__section__presentation {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+      padding-bottom: 2rem;
+    }
+    .canvas__section__presentation .parragraph {
+      width: 80%;
+      margin: 0;
+      align-items: center;
+      text-align: center;
+    }
+    .canvas__section__presentation .title {
+      width: 100%;
+      text-align: center;
+    }
+  /* End First Section */
+
+  .canvas__section__description .item .arrow {
+    display: none;
+  }
+
+  /* Maxilofacial */
+    .canvas__section__description.maxilo .item:nth-child(1) {
+      left: 5%;
+    }
+
+    .canvas__section__description.maxilo .item:nth-child(2) {
+      left: 15%;
+    }
+  /* End Maxilofacial */  
+
+  /* Columna */
+    .canvas__section__description.columna .item:nth-child(1) {
+      right: 0%;
+    }
+  /* End Columna */
+
+  /* Toracico */
+    .canvas__section__description.taracico .item:nth-child(1) {
+      left: 10%;
+    }
+    
+    .canvas__section__description.taracico .item:nth-child(2) {
+      left: 10%;
+    }
+  /* End Toracico */
+
+  /* Brazos */
+    .canvas__section__description.brazos .item:nth-child(1) {
+      right: 0%;
+    }
+
+    .canvas__section__description.brazos .item:nth-child(2) {
+      right: 0%;
+    }
+
+    .canvas__section__description.brazos .item:nth-child(3) {
+      right: 0%;
+    }
+  /* End Brazos */
+
+  /* Cadera */
+    .canvas__section__description.cadera .item:nth-child(1) {
+      top: 50%;
+      left: 10%;
+    } 
+  /* End Cadera */
+
+  /* Mano */
+    .canvas__section__description.mano .item:nth-child(1) {
+      right: 0%;
+    }
+
+    .canvas__section__description.mano .item:nth-child(2) {
+      left: auto;
+      right: 0%;
+    }
+  /* End Mano */
+} 
+
+@media screen and (max-width: 500px) {
+  .canvas__section__presentation .title {
+    font-size: 3.5rem;
+  }
+} 
+
+@media screen and (max-width: 473px) {
+  .canvas__section__presentation .title {
+    font-size: 3rem;
+  }
+}
+  
+@media screen and (max-width: 375px) {
+  .canvas__section__presentation .title {
+    font-size: 2.3rem;
+  }
+}

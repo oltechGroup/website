@@ -1,0 +1,70 @@
+.section-posts {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.section-posts__posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-posts__posts iframe {
+  background-color: #fff;
+  border: none;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.section-posts__parragraph {
+  position: sticky;
+  top: 7rem;
+  height: max-content;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.section-posts .icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.section-posts .icons img {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 1115px) {
+  .section-posts {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .section-posts__parragraph {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding: 2rem;
+  }
+
+  .section-posts {
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: none;
+    width: 100%;
+  }
+  iframe {
+    width: calc(100vw - 2rem);
+    height: 300px;
+  }
+}

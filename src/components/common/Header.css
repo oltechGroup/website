@@ -1,0 +1,211 @@
+.nav-oltech {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transform: translateY(0);
+  background-color: #fff;
+  transition: all 0.3s ease;
+  animation: show 0.5s ease forwards;
+}
+
+.nav-oltech__container {
+  max-width: 1200px;
+  height: 5.5rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-oltech__container .items {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.nav-oltech__container .items ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-oltech__container .items ul li a {
+  color: var(--text-black-secondary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-oltech__container .items ul li a:hover {
+  color: var(--text-black);
+  text-decoration: underline;
+}
+.nav-oltech-logo {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Variants header */
+  .nav-oltech.transparent {
+    background-color: transparent;
+    box-shadow: none !important; 
+  }
+  .nav-oltech.shadow {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.114);
+  }
+  .nav-oltech.open {
+    box-shadow: none;
+  }
+  .nav-oltech.hidden {
+    animation: hidden 0.5s ease forwards;
+  }
+  @keyframes hidden {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  @keyframes show {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  /* Principal */
+  .nav-oltech.principal {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: none;
+  }
+
+  .nav-oltech.principal .nav-oltech__container {
+    height: 7.5rem;
+    padding: 0 3rem;
+  } 
+  .nav-oltech.principal .nav-oltech__container .items ul li a {
+    color: var(--text-white-secondary);
+    font-weight: normal;
+    text-decoration: none;
+  }
+  .nav-oltech.principal .nav-oltech__container .items ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .oltech-logo__white{
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .nav-oltech.principal .btn-contact {
+    background-color: #fff;
+    color: #B100DE;
+  }
+  /* End principal */
+/* End Variants header */
+
+
+/* Button burger */
+.btn-burger {
+  display: none;
+  background-color: transparent;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-black-secondary);
+}
+
+.btn-burger:focus {
+  outline: none;
+  background-color: transparent;
+}
+.btn-burger .icon-burger {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.btn-burger .icon-burger .line {
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #525252;
+  transition: all 0.3s ease;
+}
+.btn-burger--white .icon-burger .line {
+  background-color: #fff;
+}
+.btn-burger--open .icon-burger .line {
+  background-color: #525252;
+}
+
+.btn-burger--open .icon-burger .line:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+.btn-burger--open .icon-burger .line:nth-child(2) {
+  display: none;
+}
+.btn-burger--open .icon-burger .line:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+/* End Button burger */
+
+.nav-oltech__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 7rem 3rem 0 3rem;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+} 
+.nav-oltech__menu button {
+  width: 100%;
+}
+.nav-oltech__menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.nav-oltech__menu ul li a {
+  color: var(--text-black-secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 975px) {
+  .nav-oltech.principal .nav-oltech__container {
+    padding: 0 2rem;
+  } 
+
+  .nav-oltech__container {
+    padding: 0 2rem;
+  }
+  .nav-oltech__container button {
+    font-size: 0.8rem;
+  }
+  .nav-oltech__container .items ul {
+    display: none;
+  }
+  .nav-oltech__container .btn-contact {
+    display: none;
+  }
+  .btn-burger {
+    display: flex;
+  }
+}

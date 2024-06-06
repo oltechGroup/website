@@ -45,7 +45,7 @@ export const strategy = [
     title: "Misión",
     image: imageMision,
     description:
-      "Ofrecer servicios integrales e insumos médicos de alta calidad a precios accesibles, y brindar respuestas rápidas y eficaces para ayudar a nuestros clientes a cumplir con sus objetivos de atención médica.",
+      "Ofrecer servicios integrales e insumos médicos de alta calidad a precios accesibles, brindar respuestas rápidas y eficaces para ayudar a nuestros clientes a cumplir con sus objetivos de atención médica.",
   },
   {
     id: 2,
@@ -58,7 +58,7 @@ export const strategy = [
     id: 3,
     title: "Valores",
     image: imageValores,
-    description: "Honestidad, Excelencia, Compromiso, Pasión, Integridad",
+    description: "Honestidad, Excelencia, Compromiso, Pasión, Integridad.",
   },
 ];
 

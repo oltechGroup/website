@@ -12,29 +12,29 @@
       height: 100%;
       top: 0;
       left: 0;
-      /* background: linear-gradient(249deg, #8300EA 23.61%, #C400F5 100%); */
-      background-color: #8300EA;
-      z-index: -1;
+      background: linear-gradient(to right, #8300EA, rgba(178, 28, 224, 0)); 
+      z-index: 1;
+      pointer-events: none; 
     }
 
-    .page-about .section-title__image {
-      position: relative;
-      width: 300px;
-      height: 100%;
-    }
-    .page-about::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: tomato;
+.page-about .section-title__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../assets/images/oltech-about.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -8; 
+
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     }
 
   /* End Background */
 
 .page-about .section-title {
+  position: relative;
   max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   gap: 3rem;
+  background: linear-gradient(to right, #8300EA, rgba(178, 28, 224, 0)); 
 }
 .page-about .section-title h1 {
   font-size: 4em;
@@ -49,6 +50,8 @@
 }
 
 .section-title__parragraphs {
+  position: relative;
+  z-index: 2; 
   max-width: 32rem;
 }
 

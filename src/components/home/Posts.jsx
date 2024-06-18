@@ -1,6 +1,7 @@
 import logoFacebook from "../../assets/icons/logo-facebook.jpg";
-import logoInstagram from "../../assets/icons/logo-instagram.jpg";
+import logoInstagram from "../../assets/icons/logo-instagram.webp";
 import logoWhatsapp from "../../assets/icons/logo-whatsapp.svg";
+import logoTiktok from "../../assets/icons/logo-tiktok.png";
 import "./Posts.css";
 
 function Posts() {
@@ -16,13 +17,28 @@ function Posts() {
         </p>
 
         <div className="icons">
-          <a href="https://www.facebook.com/OltechMexico?locale=es_LA">
+          <a
+            href="https://www.facebook.com/OltechMexico"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={logoFacebook} alt="Facebook Oltech" />
           </a>
-          <a href="#">
+          <a
+            href="https://www.instagram.com/grupooltech"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={logoInstagram} alt="Instagram Oltech" />
           </a>
-          <a href="https://wa.link/xw2myn">
+          <a
+            href="https://www.tiktok.com/@grupo.oltech"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={logoTiktok} alt="Tiktok Oltech" />
+          </a>
+          <a href="https://wa.link/xw2myn" target="_blank" rel="noreferrer">
             <img src={logoWhatsapp} alt="Whatsapp Oltech" />
           </a>
         </div>

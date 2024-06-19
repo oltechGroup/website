@@ -1,7 +1,9 @@
 import logoFacebook from "../../assets/icons/logo-facebook.jpg";
 import logoInstagram from "../../assets/icons/logo-instagram.webp";
 import logoWhatsapp from "../../assets/icons/logo-whatsapp.svg";
+import logoLinkedin from "../../assets/icons/logo-linkedin.webp";
 import logoTiktok from "../../assets/icons/logo-tiktok.png";
+import logoTwitter from "../../assets/icons/logo-twitter.jpg";
 import "./Posts.css";
 
 function Posts() {
@@ -40,6 +42,16 @@ function Posts() {
           </a>
           <a href="https://wa.link/xw2myn" target="_blank" rel="noreferrer">
             <img src={logoWhatsapp} alt="Whatsapp Oltech" />
+          </a>
+          <a href="https://x.com/Grupo_oltech" target="_blank" rel="noreferrer">
+            <img src={logoTwitter} alt="Twitter Oltech" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/grupo-oltech-7bab5930a/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={logoLinkedin} alt="Linkedin Oltech" />
           </a>
         </div>
       </div>

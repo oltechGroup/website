@@ -11,6 +11,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
 
+import "../../styles/flipbook.css";
+
 function WhyChoose() {
   const nav = useNavigate();
 
@@ -34,8 +36,7 @@ function WhyChoose() {
       <iframe
         src="https://heyzine.com/flip-book/ab402d7461.html"
         frameborder="0"
-        width="100%"
-        height={600}
+        className="flipbook-iframe"
       ></iframe>
       <section className="section-degraded">
         <div className="section-degraded__parragraph">

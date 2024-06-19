@@ -39,6 +39,7 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 .section-posts .icons img {
   width: 3rem;

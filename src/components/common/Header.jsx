@@ -14,8 +14,6 @@ function Header({
   animation = false,
 }) {
   gsap.registerPlugin(ScrollTrigger);
-  console.log(hidden);
-
   const [menuOpen, setMenuOpen] = useState(false);
   const nav = useNavigate();
 

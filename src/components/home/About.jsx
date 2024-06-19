@@ -61,7 +61,7 @@ function About({ refProp }) {
               <stop stopColor="#C200F4" />
               <stop offset="1" stopColor="#FF647D" />
             </linearGradient>
-          </defs> 
+          </defs>
         </svg>
         <div className="section-about__card">
           <div className="section-about__parragraphs">

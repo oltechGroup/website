@@ -1,21 +1,18 @@
 .page-about {
   overflow: hidden;
-
 }
 
 /* First section */
-  /* Background */
-    .page-about .section-title::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: linear-gradient(to right, #8300EA, rgba(178, 28, 224, 0)); 
-      z-index: 1;
-      pointer-events: none; 
-    }
+.page-about .section-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none; 
+}
 
 .page-about .section-title__image {
   position: absolute;
@@ -26,33 +23,32 @@
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../assets/images/oltech-about.png");
   background-size: cover;
   background-position: center;
-  z-index: -8; 
-
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    }
-
-  /* End Background */
+}
 
 .page-about .section-title {
   position: relative;
-  max-width: 1200px;
+  max-width: 100%;
   height: 100vh;
   margin: 0 auto;
   padding: 0 3rem;
   display: flex;
   align-items: center;
-  gap: 3rem;
-  background: linear-gradient(to right, #8300EA, rgba(178, 28, 224, 0)); 
+  background: linear-gradient(to right, #8300EA, rgb(141, 13, 210)); 
 }
+
 .page-about .section-title h1 {
-  font-size: 4em;
+  font-size: 4rem;
   color: var(--text-white);
 }
 
 .section-title__parragraphs {
-  position: relative;
-  z-index: 2; 
-  max-width: 32rem;
+  z-index: 2;
+  width: 58%;
+  margin-top: 3em;
+  flex-direction: column;
+  display: flex;
+
 }
 
 /* End First Section */
@@ -68,6 +64,7 @@
   text-align: center;
   align-items: center;
 }
+
 .section-parragraph p {
   font-size: 1.3rem;
   line-height: 1.5;
@@ -75,47 +72,47 @@
 /* End Section parragraph */
 
 /* Section strategy */
-  .section-strategy {
-    position: relative;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 4rem 6rem;
-    gap: 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+.section-strategy {
+  position: relative;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 6rem;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
-  .section-strategy::after {
-    content: "";
-    position: absolute;
-    top: -2rem;
-    right: -10rem;
-    width: 45rem;
-    height: 37rem;
-    transform: rotate(-9deg);
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: linear-gradient(221deg, #2E69F6 1.93%, #C300F4 94.08%);
-    z-index: -1;
-  }
+.section-strategy::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  right: -10rem;
+  width: 45rem;
+  height: 37rem;
+  transform: rotate(-9deg);
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: linear-gradient(221deg, #2E69F6 1.93%, #C300F4 94.08%);
+  z-index: -1;
+}
 
-  .section-strategy__item {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border-radius: 30px;
-    background: #FFF;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-    padding: 2rem;
-  }
+.section-strategy__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+}
 
-  .section-strategy__item img {
-    width: 130px;
-    height: 130px;
-  }
+.section-strategy__item img {
+  width: 130px;
+  height: 130px;
+}
 /* End Section strategy */
 
 .section-informative {
@@ -123,36 +120,28 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 960px) {
+/* Responsive */
+@media screen and (max-width: 975px) {
   .page-about .section-title {
-    flex-direction: column-reverse;
-    text-align: center;
+    padding: 0 1rem; 
   }
-  .page-about .section-title img {
-    width: 100%;
-    max-width: 27rem;
-  }
+
   .section-title__parragraphs {
     width: 100%;
-    max-width: 27rem;
-    padding: 1rem;
-  }
-  .section-title__parragraphs h1 {
-    line-height: 1.2;
-  }
-
-  .section-parragraph {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 5rem 2rem;
-    text-align: center;
+    margin-top: 0rem;
     align-items: center;
+    gap: 3rem;
   }
-
-  .section-strategy {
-    padding: 5rem 2rem;
-    gap: 4rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  .page-about .section-title h1 {
+    font-size: 3.5rem; 
   }
 }
+
+@media screen and (max-width: 490px) {
+  .page-about .section-title {
+    font-size: 3.5rem; 
+    line-height: 1.2;
+  }
+}
+/* End Responsive */

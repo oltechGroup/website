@@ -95,7 +95,7 @@ function Home() {
             <div
               className="section-home__parragrahps"
               style={{
-                opacity: 0,
+               
                 transform: "translateX(-300px)",
               }}
             >

@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import Header from "../components/common/Header";
 import { strategy } from "../data/cards";
 import Footer from "../components/common/Footer";
-import imageAbout from "../assets/images/oltech-about.png";
+import imageAbout from "../assets/images/About-oltech.png";
 import imageObjetives from "../assets/images/oltech-objectives.jpg";
 import imageBoxs from "../assets/images/boxs-image-pexels.jpg";
 import "../styles/sections.css";

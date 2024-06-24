@@ -76,7 +76,6 @@
     @media screen and (max-width: 975px) {
       .section-home__overflow {
         min-height: max-content;
-        padding-bottom: 3rem;
       }
 
       .video-hero-overflow {
@@ -94,7 +93,8 @@
         padding: 0 1rem;
       }
       .section-home__content {
-        padding-top: 10rem;
+        padding-top: 5rem;
+        
         flex-direction: column;
         height: max-content;
         gap: 3rem;

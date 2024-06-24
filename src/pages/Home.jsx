@@ -145,7 +145,6 @@ function Home() {
       <About refProp={sectionAbout} />
       <Cards />
       <WhyChoose />
-      <Brands />
       <Contact />
       <Posts />
       <Footer />

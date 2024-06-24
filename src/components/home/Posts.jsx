@@ -78,28 +78,6 @@ function Posts() {
           allowFullScreen={true}
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         ></iframe>
-        <iframe
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOltechMexico%2Fposts%2F809787887604975&show_text=true&width=500"
-          title="Facebook post"
-          width="500"
-          height="480"
-          scrolling="no"
-          frameBorder="0"
-          loading="lazy"
-          allowFullScreen={true}
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
-        <iframe
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOltechMexico%2Fposts%2F806188107964953&show_text=true&width=500"
-          title="Facebook post"
-          width="500"
-          height="465"
-          scrolling="no"
-          frameBorder="0"
-          loading="lazy"
-          allowFullScreen={true}
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
       </div>
     </section>
   );

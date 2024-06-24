@@ -20,6 +20,7 @@ import "./Home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WhyChoose from "../components/home/WhyChoose";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const [normalHeader, setNormalHeader] = useState(false);
@@ -59,6 +60,17 @@ function Home() {
 
   return (
     <div className="page-home">
+      <Helmet>
+        <meta
+          name="description"
+          content="Descubre nuestros servicios integrales en osteosíntesis, artroscopia y reemplazo articular. Mejora tu salud con Oltech. ¡Contáctanos hoy!"
+        />
+        <meta name="author" content="Oltech" />
+        <meta name="robots" content="index, follow" />
+        <title>
+          Oltech | Servicios Integrales en Osteosíntesis y Artroscopia
+        </title>
+      </Helmet>
       <Header principal />
       <Header hidden={!normalHeader} />
       <div className="section-home__overflow">

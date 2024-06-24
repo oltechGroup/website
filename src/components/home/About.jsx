@@ -68,10 +68,10 @@ function About({ refProp }) {
             <h3 className="section__title">Sobre Nosotros</h3>
             <h2 className="section__subtitle">Apoyo médico integral.</h2>
             <p>
-              Nos dedicamos a proporcionarte productos de la más alta calidad a
-              precios justos. Cada compra viene respaldada por nuestro servicio
-              garantizado, brindándote tranquilidad y confianza en tus
-              elecciones.
+              Nos dedicamos a ofrecer servicios integrales especializados en
+              osteosíntesis, artroscopia y reemplazo articular. Cada servicio
+              está respaldado por nuestro compromiso garantizado, brindándote
+              tranquilidad y confianza en tu salud y bienestar.
             </p>
             <button
               className="button-outline outline-color"

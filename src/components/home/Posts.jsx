@@ -58,6 +58,16 @@ function Posts() {
 
       <div className="section-posts__posts">
         <iframe
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOltechMexico%2Fposts%2F973107497939679&show_text=true&width=500"
+          width="500"
+          height="588"
+          scrolling="no"
+          frameBorder="0"
+          loading="lazy"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+        <iframe
           src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FOltechMexico%2Fposts%2F825801786003585&show_text=true&width=500"
           title="Facebook post"
           width="500"

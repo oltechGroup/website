@@ -44,7 +44,7 @@ p {
   color: var(--text-black-secondary);
 }
 button {
-  border-radius: 2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
   padding: 0.6rem 1.8rem;
   font-size: 0.9rem;
@@ -68,7 +68,7 @@ button:disabled:active {
 }
 
 .button-primary {
-  color: #B100DE;
+  color: #000;
   background-color: #fff;
 }
 

@@ -1,7 +1,6 @@
 /* Background Section Home */
   .section-home__overflow {
     position: relative;
-    background: linear-gradient(45deg, #8300EA, #B200DE);
     min-height: 100vh;
     height: max-content;
     overflow: hidden;
@@ -12,12 +11,30 @@
     left: 0;
     height: 100vh;
     width: auto;
+    z-index: 1;
+    display: none;
+  }
+  .video-hero-overflow {
+    position: absolute;
+    width: 100%;
+  }
+  .video-hero {
+    width: 100%;
+  }
+  .video-hero-overflow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.722);
   }
 /* End Background Section Home */
 
 /* Content Section Home */
   .section-home {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     position: relative;
     padding: 0 3rem;
@@ -28,6 +45,7 @@
     justify-content: center;
     min-height: 100vh;
     gap: 3rem;
+    text-align: center;
   }
   .section-home__parragrahps {
     width: 58%;
@@ -35,6 +53,8 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: 3em;
+    position: relative;
+    z-index: 10;
   }
   .section-home__parragrahps .title {
     font-size: 4rem;
@@ -46,6 +66,7 @@
   .section-home__parragrahps .buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
   .section-home__image {
     width: 42%;
@@ -55,7 +76,20 @@
     @media screen and (max-width: 975px) {
       .section-home__overflow {
         min-height: max-content;
+        padding-bottom: 3rem;
       }
+
+      .video-hero-overflow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .video-hero {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
       .section-home {
         padding: 0 1rem;
       }

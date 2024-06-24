@@ -166,11 +166,8 @@ function Footer() {
             </svg>
           </a>
 
-          <p>Grupo Oltech 2023</p>
+          <p>Grupo Oltech 2024</p>
         </section>
-        <p className="footer-oltech__direction">
-          8a. Cda., Alfredo del Mazo, 56577 Ixtapaluca, Méx.
-        </p>
       </div>
     </footer>
   );

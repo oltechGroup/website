@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import imageCottonbro from "../../assets/images/boxs-image-pexels.jpg";
+import imageCottonbro from "../../assets/images/kenia-oltech.jpg";
 import { routes } from "../../helpers/routes";
 import "../../styles/sections.css";
 

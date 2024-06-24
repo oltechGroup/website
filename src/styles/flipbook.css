@@ -1,4 +1,6 @@
 .flipbook-iframe {
   width: 100%;
   height: 600px; 
+  padding: 4rem;
+  margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 // Assets
-import imageAbout from "../../assets/images/pexels-about.jpg";
+import imageAbout from "../../assets/images/surgerie-oltech.jpg";
 import "../../styles/sections.css";
 import "./About.css";
 import { routes } from "../../helpers/routes";
@@ -33,6 +33,9 @@ function WhyChoose() {
 
   return (
     <>
+      <h2 className="section-cards__title">
+        Descubre nuestro catálogo digital de Oltech.
+      </h2>
       <iframe
         src="https://heyzine.com/flip-book/ab402d7461.html"
         frameborder="0"

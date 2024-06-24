@@ -15,6 +15,7 @@ import { scrollToSection } from "../helpers/scrollToSection";
 
 // SweetAlert
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   const API = "https://emails-server.fly.dev/email/send";
@@ -77,6 +78,13 @@ function Contact() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>Oltech | Contacto</title>
+        <meta
+          name="description"
+          content="Contáctanos para una experiencia personalizada. Puedes escribir tus datos en el formulario para que un asesor se ponga en contacto contigo."
+        />
+      </Helmet>
       <Header />
       <div className="page-contact">
         <section className="page-contact__informative">

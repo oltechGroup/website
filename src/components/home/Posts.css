@@ -23,9 +23,9 @@
 
 .section-posts__parragraph {
   position: sticky;
-  top: 7rem;
+  top: 6.5rem;
   height: max-content;
-  border-radius: 30px;
+  border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   padding: 2rem 4rem;

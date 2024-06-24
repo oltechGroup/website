@@ -9,7 +9,7 @@
   flex-direction: row-reverse;
 }
 .section-degraded__parragraph {
-  border-radius: 30px;
+  border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   padding: 2rem 4rem;

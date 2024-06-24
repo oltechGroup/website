@@ -14,6 +14,7 @@ import Contact from "../components/home/Contact";
 // Assets
 import imageQuartex from "../assets/images/quartex-bone-model-1.png";
 import { scrollToSection } from "../helpers/scrollToSection";
+import heroVideo from "../assets/videos/video-horizontal.mp4";
 import "./Home.css";
 
 // Gsap Imports
@@ -102,6 +103,9 @@ function Home() {
             </linearGradient>
           </defs>
         </svg>
+        <div className="video-hero-overflow">
+          <video src={heroVideo} autoPlay muted loop className="video-hero" />
+        </div>
         <section className="section-home">
           <section className="section-home__content">
             <div
@@ -134,16 +138,6 @@ function Home() {
                 </button>
               </div>
             </div>
-            <img
-              className="section-home__image"
-              src={imageQuartex}
-              alt="Quartex bone"
-              loading="lazy"
-              style={{
-                opacity: 0,
-                transform: "translateX(300px)",
-              }}
-            />
           </section>
         </section>
       </div>

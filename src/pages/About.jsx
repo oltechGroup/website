@@ -2,8 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import Header from "../components/common/Header";
 import { strategy } from "../data/cards";
 import Footer from "../components/common/Footer";
-
-import imageAbout from "../assets/images/oltech-about.png";
+import imageAbout from "../assets/images/About-oltech.png";
 import imageObjetives from "../assets/images/oltech-objectives.jpg";
 import imageBoxs from "../assets/images/boxs-image-pexels.jpg";
 import "../styles/sections.css";
@@ -33,7 +32,7 @@ function About() {
       <div className="page-about">
         <section className="section-title">
           <div className="section-title__parragraphs">
-            <h1 className="title">Presentación Grupo Oltech.</h1>
+           <h1 className="title">Presentación Grupo Oltech.</h1>
           </div>
           <img
             src={imageAbout}
@@ -105,7 +104,7 @@ function About() {
                 OLTECH ofrece servicios integrales en sector salud público y
                 privado. Se encarga de ser un solo proveedor responsable del
                 equipamiento y las diferentes tecnologías contenidas en un
-                proyecto de implementación o ampliación
+                proyecto de implementación o ampliación.
               </p>
               <button
                 className="button-outline outline-color"

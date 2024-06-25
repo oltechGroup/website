@@ -111,7 +111,7 @@ function Home() {
             <div
               className="section-home__parragrahps"
               style={{
-                opacity: 0,
+               
                 transform: "translateX(-300px)",
               }}
             >
@@ -119,7 +119,7 @@ function Home() {
               <p className="subtitle">
                 Ofrecemos soluciones y servicios integrales de alta calidad y
                 eficacia, diseñados para satisfacer las necesidades del sector
-                salud, ya sea en ámbitos públicos o privados
+                salud, ya sea en ámbitos públicos o privados.
               </p>
               <div className="buttons">
                 <button

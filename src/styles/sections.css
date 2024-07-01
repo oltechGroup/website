@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
 }
+.contact {
+  margin-top: 20rem;
+}
 .section-degraded.reverse {
   flex-direction: row-reverse;
 }

@@ -68,7 +68,7 @@
     width: 100%;
   }
   iframe {
-    width: calc(100vw - 2rem);
+    width: 100vw;
     height: 300px;
   }
 }

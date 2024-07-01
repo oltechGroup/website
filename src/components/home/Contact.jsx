@@ -7,7 +7,7 @@ function Contact() {
   const nav = useNavigate();
 
   return (
-    <section className="section-degraded reverse">
+    <section className="section-degraded reverse contact">
       <div className="section-degraded__parragraph">
         <h3 className="section__title title-pink">Contactános</h3>
         <h2 className="section__subtitle">Experiencia Personalizada.</h2>

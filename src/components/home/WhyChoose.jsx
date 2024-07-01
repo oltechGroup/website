@@ -40,6 +40,7 @@ function WhyChoose() {
         src="https://heyzine.com/flip-book/ab402d7461.html"
         frameborder="0"
         width={'100%'}
+        height={'600px'}
         className="flipbook-iframe"
       ></iframe>
       <section className="section-degraded">

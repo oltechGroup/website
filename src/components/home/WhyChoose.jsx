@@ -39,6 +39,7 @@ function WhyChoose() {
       <iframe
         src="https://heyzine.com/flip-book/ab402d7461.html"
         frameborder="0"
+        width={'100%'}
         className="flipbook-iframe"
       ></iframe>
       <section className="section-degraded">

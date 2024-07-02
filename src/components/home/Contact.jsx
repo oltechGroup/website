@@ -2,27 +2,28 @@ import { useNavigate } from "react-router-dom";
 import imageCottonbro from "../../assets/images/kenia-oltech.jpg";
 import { routes } from "../../helpers/routes";
 import "../../styles/sections.css";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
   const nav = useNavigate();
 
+  const { t } = useTranslation();
+
   return (
     <section className="section-degraded reverse contact">
       <div className="section-degraded__parragraph">
-        <h3 className="section__title title-pink">Contactános</h3>
-        <h2 className="section__subtitle">Experiencia Personalizada.</h2>
-        <p>
-          No deje que la calidad sea una opción. Elija Oltech para garantizar
-          resultados excepcionales en cada cirugía. Contáctenos hoy mismo para
-          discutir cómo podemos satisfacer sus necesidades específicas.
-        </p>
+        <h3 className="section__title title-pink">
+          {t("sectionContact.title")}
+        </h3>
+        <h2 className="section__subtitle">{t("sectionContact.subtitle")}</h2>
+        <p>{t("sectionContact.description")}</p>
         <button
           className="button-outline outline-color"
           onClick={() => {
             nav(routes.contact);
           }}
         >
-          Contactános
+          {t("sectionContact.button")}
         </button>
       </div>
       <img

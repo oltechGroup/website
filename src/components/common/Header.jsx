@@ -3,9 +3,14 @@ import "./Header.css";
 import { useEffect, useRef, useState } from "react";
 import { routes } from "../../helpers/routes";
 
+// assets
+import flagMexico from "../../assets/icons/mexico.png";
+import flagUsa from "../../assets/icons/united-states.png";
+
 // Gsap Imports
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 
 function Header({
   hidden = false,
@@ -13,6 +18,16 @@ function Header({
   principal = false,
   animation = false,
 }) {
+  // States for lenguage
+  const { i18n, t } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const [selectLanguageActive, setSelectLanguageActive] = useState(false);
+  // End States for lenguage
+
   gsap.registerPlugin(ScrollTrigger);
   const [menuOpen, setMenuOpen] = useState(false);
   const nav = useNavigate();
@@ -49,42 +64,76 @@ function Header({
     } else {
       return <LogoColor />;
     }
-  }
-  
+  };
+
   return (
     <>
       <nav className={classes}>
         <section className="nav-oltech__container">
           <div className="items">
-            <div onClick={() => nav(routes.home)}>
-              {renderLogo()}
-            </div>
+            <div onClick={() => nav(routes.home)}>{renderLogo()}</div>
             <ul>
               <li>
-                <Link to={routes.home}>Inicio</Link>
+                <Link to={routes.home}>{t("header.home")}</Link>
               </li>
               <li>
-                <Link to={routes.about}>Nosotros</Link>
+                <Link to={routes.about}>{t("header.about")}</Link>
               </li>
               <li>
-                <Link to={routes.products}>Productos</Link>
+                <Link to={routes.products}>{t("header.products")}</Link>
               </li>
               <li>
-                <Link to="#">Ayuda</Link>
+                <Link to="#">{t("header.help")}</Link>
               </li>
             </ul>
           </div>
-          <button
-            className="button-fill btn-contact"
-            onClick={() => {
-              nav(routes.contact);
-              setMenuOpen(false);
-            }}
-          >
-            Contáctanos
-          </button>
+
+          <div className="content-button-input">
+            <div className="select-language" onClick={() => setSelectLanguageActive(!selectLanguageActive)}>
+              <div className={`select-language__init ${selectLanguageActive && ("active")}`} >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="inherit"
+                  viewBox="0 0 256 256" 
+                >
+                  <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                </svg>
+                <div className="select-language__icon">
+                  <img src={i18n.language === "es" ? flagMexico : flagUsa} alt="idioma" />
+                  {t("idioma")}
+                </div>
+              </div>
+
+              {selectLanguageActive && (
+                <ul>
+                  <li onClick={() => changeLanguage("es")}>
+                    <img src={flagMexico} alt="español" />
+                    <p>Español</p>
+                  </li>
+                  <li onClick={() => changeLanguage("en")}>
+                    <img src={flagUsa} alt="english" />
+                    <p>English</p>
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <button
+              onClick={() => {
+                nav(routes.contact);
+                setMenuOpen(false);
+              }}
+            >
+              {t("header.contact")}
+            </button>
+          </div>
+
           <div
-            className={`btn-burger ${menuOpen ? "btn-burger--open" : ""} ${principal ? "btn-burger--white" : ""}`}
+            className={`btn-burger ${menuOpen ? "btn-burger--open" : ""} ${
+              principal ? "btn-burger--white" : ""
+            }`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <span className="icon-burger">
@@ -105,20 +154,20 @@ function Header({
               setMenuOpen(false);
             }}
           >
-            Contáctanos
+            {t("header.contact")}
           </button>
           <ul>
             <li>
-              <Link to={routes.home}>Inicio</Link>
+              <Link to={routes.home}>{t("header.home")}</Link>
             </li>
             <li>
-              <Link to={routes.about}>Nosotros</Link>
+              <Link to={routes.about}>{t("header.about")}</Link>
             </li>
             <li>
-              <Link to={routes.products}>Productos</Link>
+              <Link to={routes.products}>{t("header.products")}</Link>
             </li>
             <li>
-              <Link to="#">Ayuda</Link>
+              <Link to="#">{t("header.help")}</Link>
             </li>
           </ul>
         </section>

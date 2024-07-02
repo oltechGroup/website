@@ -1,0 +1,110 @@
+{
+  "idioma": "Language",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "help": "Help",
+    "contact": "Contact"
+  },
+  "sectionHero": {
+    "title": "Comprehensive Services at Your Fingertips",
+    "subtitle": "We offer high-quality and effective comprehensive solutions and services, designed to meet the needs of the health sector, whether in public or private areas",
+    "buttons": {
+      "products": "Products",
+      "contact": "Get to Know Us"
+    }
+  },
+  "sectionAbout": {
+    "title": "At Oltech, we are committed to offering products that not only meet, but exceed expectations.",
+    "subtitle": "About Us",
+    "title2": "Comprehensive Medical Support.",
+    "description": "We are dedicated to offering specialized comprehensive services in osteosynthesis, arthroscopy, and joint replacement. Each service is backed by our guaranteed commitment, providing you with peace of mind and confidence in your health and well-being.",
+    "button": "Learn more about Oltech"
+  },
+  "sectionCards": {
+    "1": {
+      "title": "Communication",
+      "description": "We are committed to providing you with prompt customer service, where your inquiries and needs are addressed promptly to ensure your complete satisfaction."
+    },
+    "2": {
+      "title": "Shipments",
+      "description": "You can rely on a fast and reliable shipping service with no minimum purchase. From the moment you place your order to delivery at your door."
+    },
+    "3": {
+      "title": "Coverage",
+      "description": "With shipping coverage throughout Mexico, we deliver our high-quality products directly to your location with no minimum purchase."
+    },
+    "4": {
+      "title": "Attention",
+      "description": "We value each customer as unique. Our personalized attention goes beyond the sale; we strive to understand your individual needs."
+    }
+  },
+  "titleCatalogo": "Discover our Oltech digital catalog",
+  "sectionWhyChoose": {
+    "title": "Why choose us?",
+    "subtitle": "Commitment to excellence.",
+    "description": "In a field where precision is crucial, choosing the right supplier can make the difference between success and compliance. At Oltech, we understand the importance of each procedure and strive to be your reliable partner at every step.",
+    "button": "See products"
+  },
+  "sectionContact": {
+    "title": "Contact Us",
+    "subtitle": "Personalized Experience.",
+    "description": "Don't let quality be an option. Choose Oltech to ensure exceptional results in every surgery. Contact us today to discuss how we can meet your specific needs.",
+    "button": "Contact us"
+  },
+  "sectionSocial": {
+    "title": "Follow us",
+    "subtitle": "Our Social Networks",
+    "description": "Stay up to date with the latest news and updates from Oltech. Follow us on our social networks for information on new products, special offers, and more."
+  },
+  "footer": {
+    "about": {
+      "title": "About the company",
+      "home": "Home",
+      "mision": "Our mission",
+      "about": "About"
+    },
+    "contact": {
+      "title": "Contact information"
+    },
+    "products": {
+      "title": "Product catalog",
+      "products": "Products",
+      "insumos": "Supplies",
+      "osteosintesis": "Osteosynthesis",
+      "other": "Other products"
+    }
+  },
+  "pageAbout": {
+    "title": "Presentation of Grupo Oltech",
+    "description": "OLTECH S.A. de C.V. is a young Mexican company with the firm conviction of making its way as one of the best providers of comprehensive services for Health in the Public and Private Sector. Our processes are highly competitive and the work is developed in a personalized way allowing us to have a constant interrelation with our clients that allow us to satisfy their needs and expectations.",
+    "button": "See our products",
+    "cards": {
+      "1": {
+        "title": "Mission",
+        "description": "Offer comprehensive medical supplies and services of high quality at affordable prices, provide quick and effective responses to help our clients meet their healthcare goals."
+      },
+      "2": {
+        "title": "Vision",
+        "description": "To be regional and national leaders in comprehensive medical supplies and services, better serving our clients to preserve health."
+      },
+      "3": {
+        "title": "Values",
+        "description": "Our values are the foundation of our company and guide us in every decision we make. We strive to be Honest, Committed, Passionate, and Ethical in everything we do."
+      }
+    },
+    "sectionObjetives": {
+      "title": "Our Objectives",
+      "subtitle": "Health and Development Committed.",
+      "description": "Provide medical supplies and comprehensive services throughout Mexico. Support the well-being and improvements in health conditions as a result of business activity. Provide our collaborators with the best conditions for their integral development.",
+      "button": "See products"
+    },
+    "sectionAlcance": {
+      "title": "Scope of our services",
+      "subtitle": "All in one provider.",
+      "description": "OLTECH offers comprehensive services in the public and private health sector. It is responsible for being a single provider of the equipment and different technologies contained in an implementation or expansion project.",
+      "button": "See products"
+    }
+  }
+}

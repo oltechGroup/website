@@ -1,0 +1,110 @@
+{
+  "idioma": "Idioma",
+  "header": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "products": "Productos",
+    "help": "Ayuda",
+    "contact": "Contactános"
+  },
+  "sectionHero": {
+    "title": "Servicios Integrales a tu Alcance",
+    "subtitle": "Ofrecemos soluciones y servicios integrales de alta calidad y eficacia, diseñados para satisfacer las necesidades del sector salud, ya sea en ámbitos públicos o privados",
+    "buttons": {
+      "products": "Productos",
+      "contact": "Conocenos"
+    }
+  },
+  "sectionAbout": {
+    "title": "En Oltech, nos comprometemos a ofrecer productos que no solo cumplen, sino que superan las expectativas.",
+    "subtitle": "Sobre Nosotros",
+    "title2": "Apoyo médico integral.",
+    "description": "Nos dedicamos a ofrecer servicios integrales especializados en osteosíntesis, artroscopia y reemplazo articular. Cada servicio está respaldado por nuestro compromiso garantizado, brindándote tranquilidad y confianza en tu salud y bienestar.",
+    "button": "Conoce más de Oltech"
+  },
+  "sectionCards": {
+    "1": {
+      "title": "Comunicación",
+      "description": "Estamos comprometidos a brindarte un servicio de atención al cliente ágil, donde tus consultas y necesidades son abordadas con prontitud para asegurar tu completa satisfacción."
+    },
+    "2": {
+      "title": "Envios",
+      "description": "Puedes confiar en un servicio de envíos rápido y confiable sin mínimo de compra. Desde el momento en que realizas tu pedido hasta la entrega en tu puerta."
+    },
+    "3": {
+      "title": "Cobertura",
+      "description": "Con cobertura de envíos en toda la República Mexicana, llevamos nuestros productos de alta calidad directamente a tu ubicación sin mínimo de compra."
+    },
+    "4": {
+      "title": "Atención",
+      "description": "Valoramos a cada cliente como único. Nuestra atención personalizada va más allá de la venta; nos esforzamos por entender tus necesidades individuales."
+    }
+  },
+  "titleCatalogo": "Descubre nuestro catálogo digital de Oltech",
+  "sectionWhyChoose": {
+    "title": "¿Por qué elegirnos?",
+    "subtitle": "Compromiso con la exlencia.",
+    "description": "En un campo donde la precisión es crucial, elegir al proveedor adecuado puede marcar la diferencia entre el éxito y la conformidad. En Oltech, entendemos la importancia de cada procedimiento y nos esforzamos por ser su socio confiable en cada paso.",
+    "button": "Ver productos"
+  },
+  "sectionContact": {
+    "title": "Contáctanos",
+    "subtitle": "Experiencia Personalizada.",
+    "description": "No deje que la calidad sea una opción. Elija Oltech para garantizar resultados excepcionales en cada cirugía. Contáctenos hoy mismo para discutir cómo podemos satisfacer sus necesidades específicas.",
+    "button": "Contáctanos"
+  },
+  "sectionSocial": {
+    "title": "Síguenos",
+    "subtitle": "Nuestras Redes Sociales",
+    "description": "Mantente al día con las últimas noticias y actualizaciones de Oltech. Síguenos en nuestras redes sociales para obtener información sobre nuevos productos, ofertas especiales y más."
+  },
+  "footer": {
+    "about": {
+      "title": "Acerca de la empresa",
+      "home": "Inicio",
+      "mision": "Nuestra misión",
+      "about": "Acerca de"
+    },
+    "contact": {
+      "title": "Información de contacto"
+    },
+    "products": {
+      "title": "Cátalogo de productos",
+      "products": "Productos",
+      "insumos": "Insumos",
+      "osteosintesis": "Osteosíntesis",
+      "other": "Otros productos"
+    }
+  },
+  "pageAbout": {
+    "title": "Presentación de Grupo Oltech",
+    "description": "OLTECH S.A. de C.V. es una empresa joven mexicana con la firme convicción de abrirse camino como uno de los mejores proveedores de servicios integrales para la Salud en el Sector Público y Privado. Nuestros procesos son altamente competitivos y el trabajo es desarrollado de forma personalizada permitiéndonos tener una constante interrelación con nuestros clientes que nos permiten satisfacer sus necesidades y expectativas.",
+    "button": "Ver nuestros productos",
+    "cards": {
+      "1": {
+        "title": "Misión",
+        "description": "Ofrecer servicios integrales e insumos médicos de alta calidad a precios accesibles, brindar respuestas rápidas y eficaces para ayudar a nuestros clientes a cumplir con sus objetivos de atención médica."
+      },
+      "2": {
+        "title": "Visión",
+        "description": "Ser líderes regionales y nacionales de servicios integrales e insumos médicos, sirviendo mejor a nuestros clientes para preservar la salud."
+      },
+      "3": {
+        "title": "Valores",
+        "description": "Nuestros valores son la base de nuestra empresa y nos guían en cada decisión que tomamos. Nos esforzamos por ser Honestos, Comprometidos, Apasionados y Éticos en todo lo que hacemos."
+      }
+    },
+    "sectionObjetives": {
+      "title": "Nuestros Objetivos",
+      "subtitle": "Salud y Desarrollo Comprometidos.",
+      "description": "Proveer insumos médicos y servicios integrales en todo México. Apoyar el bienestar y las mejoras de las condiciones de salud como una resultante de la actividad del negocio. Proporcionar a nuestros colaboradores las mejores condiciones para su desarrollo integral.",
+      "button": "Ver productos"
+    },
+    "sectionAlcance": {
+      "title": "Alcance de nuestros servicios",
+      "subtitle": "Todo en un solo proveedor.",
+      "description": "OLTECH ofrece servicios integrales en sector salud público y privado. Se encarga de ser un solo proveedor responsable del equipamiento y las diferentes tecnologías contenidas en un proyecto de implementación o ampliación.",
+      "button": "Ver productos"
+    }
+  }
+}

@@ -188,6 +188,89 @@
   text-decoration: none;
 }
 
+.content-button-input {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Select language */
+.nav-oltech.transparent .select-language {
+  border: 1px solid #ffffff82;
+}
+.nav-oltech.transparent .select-language__init {
+  color: #fff;
+}
+.nav-oltech.transparent .select-language__init svg {
+  fill: #fff;
+}
+.nav-oltech.transparent .select-language ul {
+  background-color: #ffffff3b;
+}
+.nav-oltech.transparent .select-language ul li p {
+  color: #fff;
+}
+
+.select-language {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+.select-language__init {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  color: #000;
+}
+.select-language__init svg {
+  transition: all 0.2s ease;
+  fill: #000;
+}
+.select-language__icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.select-language ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #0000003a;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+}
+.select-language ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.select-language ul li p {
+  color: #000000c6;
+  font-weight: 400;
+}
+.select-language img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+}
+
+
+.active svg {
+  transform: rotate(180deg);
+}
+/* End Select language */
+
 @media screen and (max-width: 975px) {
   .nav-oltech.principal .nav-oltech__container {
     padding: 0 2rem;
@@ -202,7 +285,7 @@
   .nav-oltech__container .items ul {
     display: none;
   }
-  .nav-oltech__container .btn-contact {
+  .nav-oltech__container .content-button-input {
     display: none;
   }
   .btn-burger {

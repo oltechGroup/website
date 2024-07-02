@@ -1,5 +1,5 @@
 .flipbook-iframe {
-  width: 100vw !important;
+  width: calc(100vw - 2rem) !important;
   height: 600px !important; 
   padding: 4rem;
   margin: 0 auto;

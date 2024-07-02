@@ -5,18 +5,17 @@ import logoLinkedin from "../../assets/icons/logo-linkedin.webp";
 import logoTiktok from "../../assets/icons/logo-tiktok.png";
 import logoTwitter from "../../assets/icons/logo-twitter.jpg";
 import "./Posts.css";
+import { useTranslation } from "react-i18next";
 
 function Posts() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-posts">
       <div className="section-posts__parragraph">
-        <h3 className="section__title">Síguenos</h3>
-        <h2 className="section__subtitle">Nuestras Redes Sociales</h2>
-        <p className="parragraph">
-          Nos dedicamos a proporcionarte productos de la más alta calidad a
-          precios justos. Cada compra viene respaldada por nuestro servicio
-          garantizado, brindándote tranquilidad y confianza en tus elecciones.
-        </p>
+        <h3 className="section__title">{t("sectionSocial.title")}</h3>
+        <h2 className="section__subtitle">{t("sectionSocial.subtitle")}</h2>
+        <p className="parragraph">{t("sectionSocial.description")}</p>
 
         <div className="icons">
           <a

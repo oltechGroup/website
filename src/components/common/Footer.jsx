@@ -1,30 +1,33 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { routes } from "../../helpers/routes";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+  
   return (
     <footer className="footer-oltech">
       <div className="footer-oltech__container">
         <section className="footer-oltech__content">
           <div className="footer-oltech__lists">
             <div className="footer-oltech__lists__item">
-              <h4>Acerca de la empresa</h4>
+              <h4>{t('footer.about.title')}</h4>
               <ul>
                 <li>
-                  <Link to={routes.home}>Inicio</Link>
+                  <Link to={routes.home}>{t('footer.about.home')}</Link>
                 </li>
                 <li>
-                  <Link to={routes.about}>Nuestra misión</Link>
+                  <Link to={routes.about}>{t('footer.about.mision')}</Link>
                 </li>
                 <li>
-                  <Link to={routes.about}>Acerca de</Link>
+                  <Link to={routes.about}>{t('footer.about.about')}</Link>
                 </li>
               </ul>
             </div>
 
             <div className="footer-oltech__lists__item">
-              <h4>Información de contacto</h4>
+              <h4>{t('footer.contact.title')}</h4>
               <ul>
                 <li>
                   <Link to="https://wa.link/xw2myn">WhatsApp</Link>
@@ -39,19 +42,19 @@ function Footer() {
             </div>
 
             <div className="footer-oltech__lists__item">
-              <h4>Catálogo de productos</h4>
+              <h4>{t('footer.products.title')}</h4>
               <ul>
                 <li>
-                  <Link to={routes.products}>Ver productos</Link>
+                  <Link to={routes.products}>{t('footer.products.products')}</Link>
                 </li>
                 <li>
-                  <Link to="#">Insumos Médicos</Link>
+                  <Link to="#">{t('footer.products.insumos')}</Link>
                 </li>
                 <li>
-                  <Link to="#">Material de Osteosíntesis</Link>
+                  <Link to="#">{t('footer.products.onsteosintesis')}</Link>
                 </li>
                 <li>
-                  <Link to="#">Otros productos</Link>
+                  <Link to="#">{t('footer.products.other')}</Link>
                 </li>
               </ul>
             </div>

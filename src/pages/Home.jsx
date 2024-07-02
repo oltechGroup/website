@@ -22,9 +22,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WhyChoose from "../components/home/WhyChoose";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 function Home() {
   const [normalHeader, setNormalHeader] = useState(false);
+
+  const { t } = useTranslation();
 
   const sectionAbout = useRef(null);
   const nav = useNavigate();
@@ -111,22 +114,17 @@ function Home() {
             <div
               className="section-home__parragrahps"
               style={{
-               
                 transform: "translateX(-300px)",
               }}
             >
-              <h1 className="title">Servicios Integrales a tu alcance.</h1>
-              <p className="subtitle">
-                Ofrecemos soluciones y servicios integrales de alta calidad y
-                eficacia, diseñados para satisfacer las necesidades del sector
-                salud, ya sea en ámbitos públicos o privados.
-              </p>
+              <h1 className="title">{t("sectionHero.title")}</h1>
+              <p className="subtitle">{t("sectionHero.subtitle")}</p>
               <div className="buttons">
                 <button
                   className="button-primary"
                   onClick={() => nav(routes.products)}
                 >
-                  Productos
+                  {t("sectionHero.buttons.products")}
                 </button>
                 <button
                   className="button-outline"
@@ -134,7 +132,7 @@ function Home() {
                     scrollToSection(sectionAbout, 90);
                   }}
                 >
-                  Conócenos
+                  {t("sectionHero.buttons.contact")}
                 </button>
               </div>
             </div>

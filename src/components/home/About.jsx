@@ -8,9 +8,12 @@ import "../../styles/sections.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function About({ refProp }) {
   const nav = useNavigate();
+
+  const { t } = useTranslation();
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -29,10 +32,7 @@ function About({ refProp }) {
 
   return (
     <>
-      <h2 className="section-cards__title">
-        En Oltech, nos comprometemos a ofrecer productos que no solo cumplen,
-        sino que superan las expectativas.
-      </h2>
+      <h2 className="section-cards__title">{t("sectionAbout.title")}</h2>
       <section ref={refProp} className="section-about">
         <svg
           width="642"
@@ -65,19 +65,14 @@ function About({ refProp }) {
         </svg>
         <div className="section-about__card">
           <div className="section-about__parragraphs">
-            <h3 className="section__title">Sobre Nosotros</h3>
-            <h2 className="section__subtitle">Apoyo médico integral.</h2>
-            <p>
-              Nos dedicamos a ofrecer servicios integrales especializados en
-              osteosíntesis, artroscopia y reemplazo articular. Cada servicio
-              está respaldado por nuestro compromiso garantizado, brindándote
-              tranquilidad y confianza en tu salud y bienestar.
-            </p>
+            <h3 className="section__title">{t("sectionAbout.subtitle")}</h3>
+            <h2 className="section__subtitle">{t("sectionAbout.title2")}</h2>
+            <p>{t("sectionAbout.description")}</p>
             <button
               className="button-outline outline-color"
               onClick={() => nav(routes.about)}
             >
-              Conoce más de Oltech
+              {t("sectionAbout.button")}
             </button>
           </div>
           <img

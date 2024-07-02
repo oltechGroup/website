@@ -6,8 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cards } from "../../data/cards";
 import "./Cards.css";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function Cards() {
+
+  const { t } = useTranslation();
+
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -72,9 +76,9 @@ function Cards() {
           <div className={`card card-${card.id}`} key={card.id}>
             <img className="card_image" src={card.image} alt={card.title} loading="lazy" />
             <div className="card__parragraphs">
-              <h3 className="card__parragraphs__title">{card.title}</h3>
+              <h3 className="card__parragraphs__title">{t(`sectionCards.${card.id}.title`)}</h3>
               <p className="card__parragraphs__description">
-                {card.description}
+                {t(`sectionCards.${card.id}.description`)}
               </p>
             </div>
           </div>

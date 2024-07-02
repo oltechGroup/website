@@ -12,9 +12,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
 
 import "../../styles/flipbook.css";
+import { useTranslation } from "react-i18next";
 
 function WhyChoose() {
   const nav = useNavigate();
+
+  const { t } = useTranslation();
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -33,31 +36,28 @@ function WhyChoose() {
 
   return (
     <>
-      <h2 className="section-cards__title">
-        Descubre nuestro catálogo digital de Oltech.
-      </h2>
+      <h2 className="section-cards__title">{t("titleCatalogo")}</h2>
       <iframe
         src="https://heyzine.com/flip-book/ab402d7461.html"
         frameborder="0"
-        width={'100%'}
-        height={'600px'}
+        width={"100%"}
+        height={"600px"}
         className="flipbook-iframe"
       ></iframe>
       <section className="section-degraded">
         <div className="section-degraded__parragraph">
-          <h3 className="section__title title-blue">¿Por qué elegirnos?</h3>
-          <h2 className="section__subtitle">Compromiso con la excelencia.</h2>
-          <p>
-            En un campo donde la precisión es crucial, elegir al proveedor
-            adecuado puede marcar la diferencia entre el éxito y la conformidad.
-            En Oltech, entendemos la importancia de cada procedimiento y nos
-            esforzamos por ser su socio confiable en cada paso.
-          </p>
+          <h3 className="section__title title-blue">
+            {t("sectionWhyChoose.title")}
+          </h3>
+          <h2 className="section__subtitle">
+            {t("sectionWhyChoose.subtitle")}
+          </h2>
+          <p>{t("sectionWhyChoose.description")}</p>
           <button
             className="button-outline outline-color"
             onClick={() => nav(routes.products)}
           >
-            Ver Productos
+            {t("sectionWhyChoose.button")}
           </button>
         </div>
         <img

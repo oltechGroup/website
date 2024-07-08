@@ -16,7 +16,7 @@ function About() {
   const [normalHeader, setNormalHeader] = useState(false);
 
   const { t } = useTranslation();
-  
+
   useEffect(() => window.scrollTo(0, 0), []);
 
   useEffect(() => {
@@ -47,20 +47,34 @@ function About() {
           />
         </section>
 
-        <section className="section-parragraph">
-          <p>{t("pageAbout.description")}</p>
-          <img src={certificadoImage} alt="Certificado Digital" title="Certificado Digital" className="cetificado" />
+        <section className="section-strategy">
+          <div className="section-strategy__grid">
+            {strategy.map((item) => (
+              <div key={item.id} className="section-strategy__item">
+                <img src={item.image} alt={item.title} />
+                <h3>{t(`pageAbout.cards.${item.id}.title`)}</h3>
+                <p>{t(`pageAbout.cards.${item.id}.description`)}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="section-strategy__item ">
+            <h3>Politica de Calidad</h3>
+            <p>{t("pageAbout.description")}</p>
+          </div>
         </section>
 
-        <section className="section-strategy">
-          {strategy.map((item) => (
-            <div key={item.id} className="section-strategy__item">
-              <img src={item.image} alt={item.title} />
-              <h3>{t(`pageAbout.cards.${item.id}.title`)}</h3>
-              <p>{t(`pageAbout.cards.${item.id}.description`)}</p>
-            </div>
-          ))}
-        </section>
+        <section className="section-parragraph">
+          <h3 className="section__title">
+            {t(`pageAbout.sectionCertificado.title`)}
+          </h3>
+          <img
+            src={certificadoImage}
+            alt="Certificado Digital"
+            title="Certificado Digital"
+            className="cetificado"
+          />
+        </section>  
 
         <div className="section-informative">
           <section className="section-degraded">

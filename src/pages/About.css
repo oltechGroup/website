@@ -48,7 +48,11 @@
   margin-top: 3em;
   flex-direction: column;
   display: flex;
+}
 
+.cetificado {
+  width: 50%;
+  border-radius: 1rem;
 }
 
 /* End First Section */
@@ -135,6 +139,10 @@
   
   .page-about .section-title h1 {
     font-size: 3.5rem; 
+  }
+
+  .cetificado {
+    width: 100%;
   }
 }
 

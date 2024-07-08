@@ -7,13 +7,16 @@ import imageObjetives from "../assets/images/oltech-objectives.jpg";
 import imageBoxs from "../assets/images/boxs-image-pexels.jpg";
 import "../styles/sections.css";
 import "./About.css";
+
+import certificadoImage from "../assets/images/certificado.jpg";
+
 import { useTranslation } from "react-i18next";
 
 function About() {
   const [normalHeader, setNormalHeader] = useState(false);
 
   const { t } = useTranslation();
-
+  
   useEffect(() => window.scrollTo(0, 0), []);
 
   useEffect(() => {
@@ -46,9 +49,7 @@ function About() {
 
         <section className="section-parragraph">
           <p>{t("pageAbout.description")}</p>
-          <button className="button-outline outline-color">
-            {t("pageAbout.button")}
-          </button>
+          <img src={certificadoImage} alt="Certificado Digital" title="Certificado Digital" className="cetificado" />
         </section>
 
         <section className="section-strategy">

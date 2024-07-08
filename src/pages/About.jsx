@@ -36,26 +36,35 @@ function About() {
     <Fragment>
       <Header principal={!normalHeader} />
       <div className="page-about">
+        
         <section className="section-title">
-          <div className="section-title__parragraphs">
-            <h1 className="title">{t("pageAbout.title")}</h1>
+          <div className="section-title__content">
+            <h1>{t("pageAbout.title")}</h1>
           </div>
-          <img
-            src={imageAbout}
-            alt="Acerca de Oltech"
-            className="section-title__image"
-          />
         </section>
 
         <section className="section-strategy">
           <div className="section-strategy__grid">
-            {strategy.map((item) => (
+            {strategy.slice(0, 2).map((item) => (
               <div key={item.id} className="section-strategy__item">
                 <img src={item.image} alt={item.title} />
                 <h3>{t(`pageAbout.cards.${item.id}.title`)}</h3>
                 <p>{t(`pageAbout.cards.${item.id}.description`)}</p>
               </div>
             ))}
+            <div key='3' className="section-strategy__item">
+              <img src={strategy[2].image} alt={strategy[2].title} />
+              <h3>{t(`pageAbout.cards.3.title`)}</h3>
+              <ul style={{
+                marginInline: 'auto',
+              }}>
+                <li>{t("pageAbout.cards.3.valor1")}</li>
+                <li>{t("pageAbout.cards.3.valor2")}</li>
+                <li>{t("pageAbout.cards.3.valor3")}</li>
+                <li>{t("pageAbout.cards.3.valor4")}</li>
+                <li>{t("pageAbout.cards.3.valor5")}</li>
+              </ul>
+            </div>
           </div>
 
           <div className="section-strategy__item">
@@ -74,7 +83,7 @@ function About() {
             title="Certificado Digital"
             className="cetificado"
           />
-        </section>  
+        </section>
 
         <div className="section-informative">
           <section className="section-degraded">

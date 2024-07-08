@@ -3,51 +3,39 @@
 }
 
 /* First section */
-.page-about .section-title::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none; 
-}
-
-.page-about .section-title__image {
+.page-about .section-title::before {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../assets/images/oltech-about.png");
-  background-size: cover;
-  background-position: center;
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background-image: url(../assets/images/About-oltech.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  z-index: -1;
 }
 
 .page-about .section-title {
   position: relative;
-  max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;  
+  background: linear-gradient(to right, #8300ea 50%, rgba(141, 13, 210, 0.047));
+}
+
+.page-about .section-title__content {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 3rem;
+  height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #8300EA, rgb(141, 13, 210)); 
 }
 
-.page-about .section-title h1 {
+.page-about .section-title__content h1 {
+  width: 50%;
   font-size: 4rem;
   color: var(--text-white);
-}
-
-.section-title__parragraphs {
-  z-index: 2;
-  width: 58%;
-  margin-top: 3em;
-  flex-direction: column;
-  display: flex;
 }
 
 .cetificado {
@@ -89,20 +77,19 @@
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
 }
 
 .section-strategy::after {
   content: "";
   position: absolute;
-  top: -2rem;
+  top: 5rem;
   right: -10rem;
   width: 45rem;
   height: 37rem;
   transform: rotate(-9deg);
   flex-shrink: 0;
   border-radius: 40px;
-  background: linear-gradient(221deg, #2E69F6 1.93%, #C300F4 94.08%);
+  background: linear-gradient(221deg, #2e69f6 1.93%, #c300f4 94.08%);
   z-index: -1;
 }
 
@@ -112,7 +99,7 @@
   gap: 1rem;
   text-align: justify;
   border-radius: 30px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
   padding: 2rem;
 }
@@ -130,30 +117,53 @@
 }
 
 /* Responsive */
+
+@media screen and (max-width: 1164px) {
+  .page-about .section-title__content h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 975px) {
-  .page-about .section-title {
-    padding: 0 1rem; 
+  .page-about .section-title__content {
+    padding: 0 1rem;
   }
 
+  .section-strategy {
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+  
   .section-title__parragraphs {
     width: 100%;
     margin-top: 0rem;
     align-items: center;
     gap: 3rem;
   }
-  
+
   .page-about .section-title h1 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
   }
 
   .cetificado {
     width: 100%;
   }
+
+  .section-strategy__grid {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .page-about .section-title {
+    background: #8300ea;
+  }
 }
 
 @media screen and (max-width: 490px) {
   .page-about .section-title {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     line-height: 1.2;
   }
 }

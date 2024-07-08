@@ -94,7 +94,11 @@
       },
       "3": {
         "title": "Values",
-        "description": "Honesty, Excellence, Commitment, Passion, Integrity"
+        "valor1": "Honesty",
+        "valor2": "Excellence",
+        "valor3": "Commitment",
+        "valor4": "Passion",
+        "valor5": "Responsibility"
       }
     },
     "sectionObjetives": {

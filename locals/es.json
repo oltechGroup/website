@@ -94,7 +94,11 @@
       },
       "3": {
         "title": "Valores",
-        "description": "Honestidad, Excelencia, Compromiso, Pasión, Integridad"
+        "valor1": "Honestidad",
+        "valor2": "Excelencia",
+        "valor3": "Compromiso",
+        "valor4": "Pasión",
+        "valor5": "Integridad"
       }
     },
     "sectionObjetives": {

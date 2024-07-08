@@ -32,13 +32,6 @@ function Posts() {
           >
             <img src={logoInstagram} alt="Instagram Oltech" />
           </a>
-          <a
-            href="https://www.tiktok.com/@grupo.oltech"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={logoTiktok} alt="Tiktok Oltech" />
-          </a>
           <a href="https://wa.link/xw2myn" target="_blank" rel="noreferrer">
             <img src={logoWhatsapp} alt="Whatsapp Oltech" />
           </a>

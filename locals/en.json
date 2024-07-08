@@ -77,21 +77,21 @@
     }
   },
   "pageAbout": {
-    "title": "Presentation of Grupo Oltech",
-    "description": "OLTECH S.A. de C.V. is a young Mexican company with the firm conviction of making its way as one of the best providers of comprehensive services for Health in the Public and Private Sector. Our processes are highly competitive and the work is developed in a personalized way allowing us to have a constant interrelation with our clients that allow us to satisfy their needs and expectations.",
-    "button": "See our products",
+    "title": "Oltech Group Presentation",
+    "description": "At Oltech S.A. de C.V., we are committed to providing the best comprehensive services in the field of: Supply of Osteosynthesis and Joint Replacement Supplies, Hospital Management and Clinical Laboratories, Supply of High Specialty Healing Materials, as well as Medical Equipment and Technical Support Services to help our clients achieve their health care goals. To fulfill our commitment, we work from a continuous improvement approach and in accordance with our clients' needs.",
+    "button": "View our products",
     "cards": {
       "1": {
         "title": "Mission",
-        "description": "Offer comprehensive medical supplies and services of high quality at affordable prices, provide quick and effective responses to help our clients meet their healthcare goals."
+        "description": "We seek to offer the best comprehensive services and medical supplies, providing products of the highest quality at a good price, offering quick and effective responses to help our clients achieve their health care goals."
       },
       "2": {
         "title": "Vision",
-        "description": "To be regional and national leaders in comprehensive medical supplies and services, better serving our clients to preserve health."
+        "description": "To be regional and national leaders in comprehensive services and medical supplies, serving our clients better to preserve health."
       },
       "3": {
         "title": "Values",
-        "description": "Our values are the foundation of our company and guide us in every decision we make. We strive to be Honest, Committed, Passionate, and Ethical in everything we do."
+        "description": "Honesty, Excellence, Commitment, Passion, Integrity"
       }
     },
     "sectionObjetives": {

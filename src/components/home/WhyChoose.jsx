@@ -36,14 +36,14 @@ function WhyChoose() {
 
   return (
     <>
-      <h2 className="section-cards__title">{t("titleCatalogo")}</h2>
+      {/* <h2 className="section-cards__title">{t("titleCatalogo")}</h2>
       <iframe
         src="https://heyzine.com/flip-book/ab402d7461.html"
         frameborder="0"
         width={"100%"}
         height={"600px"}
         className="flipbook-iframe"
-      ></iframe>
+      ></iframe> */}
       <section className="section-degraded">
         <div className="section-degraded__parragraph">
           <h3 className="section__title title-blue">

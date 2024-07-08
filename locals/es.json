@@ -78,12 +78,12 @@
   },
   "pageAbout": {
     "title": "Presentación de Grupo Oltech",
-    "description": "OLTECH S.A. de C.V. es una empresa joven mexicana con la firme convicción de abrirse camino como uno de los mejores proveedores de servicios integrales para la Salud en el Sector Público y Privado. Nuestros procesos son altamente competitivos y el trabajo es desarrollado de forma personalizada permitiéndonos tener una constante interrelación con nuestros clientes que nos permiten satisfacer sus necesidades y expectativas.",
+    "description": "En Oltech S.A. de C.V., nos comprometemos a ofrecer los mejores servicios integrales en materia de: Suministro de Insumos de Osteosíntesis y Reemplazo Articular, Gestión Hospitalaria y Laboratorios Clínicos, Suministro de Material de Curación de Alta Especialidad, así como de Equipamiento Médico y Servicios de Soporte Técnico para ayudar a nuestros clientes en el cumplimiento de sus objetivos en materia de atención a la salud. Para lograr nuestro compromiso, trabajamos desde un enfoque de mejora continua y en apego a las necesidades de nuestros clientes.",
     "button": "Ver nuestros productos",
     "cards": {
       "1": {
         "title": "Misión",
-        "description": "Ofrecer servicios integrales e insumos médicos de alta calidad a precios accesibles, brindar respuestas rápidas y eficaces para ayudar a nuestros clientes a cumplir con sus objetivos de atención médica."
+        "description": "Buscamos ofrecer los mejores servicios integrales e insumos médicos, ofreciendo productos de la mejor calidad, a buen precio, dando respuestas rápidas y eficaces para ayudar a nuestros clientes a cumplir con sus objetivos de atención a la salud"
       },
       "2": {
         "title": "Visión",
@@ -91,7 +91,7 @@
       },
       "3": {
         "title": "Valores",
-        "description": "Nuestros valores son la base de nuestra empresa y nos guían en cada decisión que tomamos. Nos esforzamos por ser Honestos, Comprometidos, Apasionados y Éticos en todo lo que hacemos."
+        "description": "Honestidad, Excelencia, Compromiso, Pasión, Integridad"
       }
     },
     "sectionObjetives": {

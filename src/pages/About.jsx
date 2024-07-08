@@ -58,7 +58,7 @@ function About() {
             ))}
           </div>
 
-          <div className="section-strategy__item ">
+          <div className="section-strategy__item">
             <h3>Politica de Calidad</h3>
             <p>{t("pageAbout.description")}</p>
           </div>

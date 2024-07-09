@@ -1,9 +1,9 @@
-.page-about {
+.page__about {
   overflow: hidden;
 }
 
 /* First section */
-.page-about .section-title::before {
+.page__about .section-title::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -17,13 +17,13 @@
   z-index: -1;
 }
 
-.page-about .section-title {
+.page__about .section-title {
   position: relative;
   min-height: 100vh;  
   background: linear-gradient(to right, #8300ea 50%, rgba(141, 13, 210, 0.047));
 }
 
-.page-about .section-title__content {
+.page__about .section-title__content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3rem;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-.page-about .section-title__content h1 {
+.page__about .section-title__content h1 {
   width: 50%;
   font-size: 4rem;
   color: var(--text-white);
@@ -119,14 +119,14 @@
 /* Responsive */
 
 @media screen and (max-width: 1164px) {
-  .page-about .section-title__content h1 {
+  .page__about .section-title__content h1 {
     width: 100%;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 975px) {
-  .page-about .section-title__content {
+  .page__about .section-title__content {
     padding: 0 1rem;
   }
 
@@ -142,7 +142,7 @@
     gap: 3rem;
   }
 
-  .page-about .section-title h1 {
+  .page__about .section-title h1 {
     font-size: 2.5rem;
   }
 
@@ -156,13 +156,13 @@
 }
 
 @media screen and (max-width: 745px) {
-  .page-about .section-title {
+  .page__about .section-title {
     background: #8300ea;
   }
 }
 
 @media screen and (max-width: 490px) {
-  .page-about .section-title {
+  .page__about .section-title {
     font-size: 3.5rem;
     line-height: 1.2;
   }

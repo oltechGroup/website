@@ -33,9 +33,9 @@ function About() {
   }, []);
 
   return (
-    <Fragment>
+    <>
       <Header principal={!normalHeader} />
-      <div className="page-about">
+      <div className="page__about">
         
         <section className="section-title">
           <div className="section-title__content">
@@ -134,7 +134,7 @@ function About() {
         </div>
       </div>
       <Footer />
-    </Fragment>
+    </>
   );
 }
 

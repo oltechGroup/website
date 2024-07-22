@@ -12,7 +12,7 @@
     "subtitle": "Ofrecemos soluciones y servicios integrales de alta calidad y eficacia, diseñados para satisfacer las necesidades del sector salud, ya sea en ámbitos públicos o privados",
     "buttons": {
       "products": "Productos",
-      "contact": "Conocenos"
+      "contact": "Conócenos"
     }
   },
   "sectionAbout": {
@@ -28,7 +28,7 @@
       "description": "Estamos comprometidos a brindarte un servicio de atención al cliente ágil, donde tus consultas y necesidades son abordadas con prontitud para asegurar tu completa satisfacción."
     },
     "2": {
-      "title": "Envios",
+      "title": "Envíos",
       "description": "Puedes confiar en un servicio de envíos rápido y confiable sin mínimo de compra. Desde el momento en que realizas tu pedido hasta la entrega en tu puerta."
     },
     "3": {
@@ -78,7 +78,7 @@
   },
   "pageAbout": {
     "title": "Presentación de Grupo Oltech",
-    "description": "En Oltech S.A. de C.V., nos comprometemos a ofrecer los mejores servicios integrales en materia de: Suministro de Insumos de Osteosíntesis y Reemplazo Articular, Gestión Hospitalaria y Laboratorios Clínicos, Suministro de Material de Curación de Alta Especialidad, así como de Equipamiento Médico y Servicios de Soporte Técnico para ayudar a nuestros clientes en el cumplimiento de sus objetivos en materia de atención a la salud. Para lograr nuestro compromiso, trabajamos desde un enfoque de mejora continua y en apego a las necesidades de nuestros clientes.",
+    "description": "En Oltech S.A. de C.V., ofrecemos los mejores servicios integrales en materia de: suministro de Insumos de Osteosíntesis y Reemplazo Articular, Gestión Hospitalaria y Laboratorios Clínicos, Suministro de Material de Curación de Alta Especialidad, así como de Equipamiento Médico y Servicios de Soporte Técnico para impulsar a nuestros clientes en el cumplimiento de sus objetivos en materia de atención a la salud. Asumimos nuestro compromiso desde un enfoque de mejora continua y en apego a la conformidad de los requisitos de carácter legal, reglamentarios y aquellos que por naturaleza de nuestra organización resulten aplicables.",
     "button": "Descargar Certificado Digital",
     "sectionCertificado": {
       "title": "Certificado de Calidad"

@@ -51,7 +51,7 @@ function Footer() {
                   <Link to="#">{t('footer.products.insumos')}</Link>
                 </li>
                 <li>
-                  <Link to="#">{t('footer.products.onsteosintesis')}</Link>
+                  <Link to="#">{t('footer.products.osteosintesis')}</Link>
                 </li>
                 <li>
                   <Link to="#">{t('footer.products.other')}</Link>

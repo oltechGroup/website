@@ -79,19 +79,6 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.section-strategy::after {
-  content: "";
-  position: absolute;
-  top: 5rem;
-  right: -10rem;
-  width: 45rem;
-  height: 37rem;
-  transform: rotate(-9deg);
-  flex-shrink: 0;
-  border-radius: 40px;
-  background: linear-gradient(221deg, #2e69f6 1.93%, #c300f4 94.08%);
-  z-index: -1;
-}
 
 .section-strategy__item {
   display: flex;

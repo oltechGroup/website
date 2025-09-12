@@ -3,7 +3,7 @@ import imageCamion from "../assets/images/camion.jpg";
 import imageCharla from "../assets/images/charla.jpg";
 import imageMexico from "../assets/images/mexico.jpg";
 import imageMision from "../assets/icons/Mision_nueva.png";
-import imageVision from "../assets/icons/vision_nueva.png";
+import imageVision from "../assets/icons/Vision_nueva.png";
 import imageValores from "../assets/icons/Valores_nueva.png";
 import logoWhatsApp from "../assets/icons/logo-whatsapp.svg";
 import logoPhone from "../assets/icons/logo-phone.jpg";

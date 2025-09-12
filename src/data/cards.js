@@ -2,12 +2,13 @@ import imageAtencion from "../assets/images/atencion.jpg";
 import imageCamion from "../assets/images/camion.jpg";
 import imageCharla from "../assets/images/charla.jpg";
 import imageMexico from "../assets/images/mexico.jpg";
-import imageMision from "../assets/icons/mision.jpg";
-import imageVision from "../assets/icons/vision.jpg";
-import imageValores from "../assets/icons/balanza.jpg";
+import imageMision from "../assets/icons/Mision_nueva.png";
+import imageVision from "../assets/icons/vision_nueva.png";
+import imageValores from "../assets/icons/Valores_nueva.png";
 import logoWhatsApp from "../assets/icons/logo-whatsapp.svg";
 import logoPhone from "../assets/icons/logo-phone.jpg";
 import logoEmail from "../assets/icons/logo-email.jpg";
+import imagepolitica from "../assets/icons/Politica_calidad_nueva.png"
 
 export const cards = [
   {
@@ -45,7 +46,7 @@ export const strategy = [
     title: "Misión",
     image: imageMision,
     description:
-      "Ofrecer servicios integrales e insumos médicos de alta calidad a precios accesibles, brindar respuestas rápidas y eficaces para ayudar a nuestros clientes a cumplir con sus objetivos de atención médica.",
+      "Buscamos ofrecer los mejores servicios integrales ofreciendo productos de la mejor calidad, a buen precio dando respuestas rápidas y eficaces para ayudar a nuestrosclientes con sus objetivos de atención a la salud.",
   },
   {
     id: 2,
@@ -59,6 +60,12 @@ export const strategy = [
     title: "Valores",
     image: imageValores,
     description: "Honestidad, Excelencia, Compromiso, Pasión, Integridad.",
+  },
+  {
+    id: 4,
+    title: "Politica de Calidad",
+    image: imagepolitica,
+    description: "En Oltech S.A. de C.V., ofrecemos los mejores servicios integrales en materia de: suministro de Insumos de Osteosíntesis y Reemplazo Articular, para impulsar a nuestros clientes en el cumplimiento de sus objetivos en materia de atención a la salud. Asumimos nuestro compromiso desde un enfoque de mejora continua y un apego a la conformidad de los requisitos de carácter legal, reglamentarios y aquellos que por naturaleza de nuestra organización resulten aplicables.",
   },
 ];
 

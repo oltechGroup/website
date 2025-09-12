@@ -7,9 +7,9 @@ import imageObjetives from "../assets/images/oltech-objectives.jpg";
 import imageBoxs from "../assets/images/boxs-image-pexels.jpg";
 import "../styles/sections.css";
 import "./About.css";
-
 import certificadoImage from "../assets/images/certificado.jpg";
-
+import certificadoImage2 from "../assets/images/Certificado_2025.jpg";
+import politicaImg from "../assets/icons/Politica_calidad_nueva.png"
 import { useTranslation } from "react-i18next";
 
 function About() {
@@ -67,9 +67,12 @@ function About() {
             </div>
           </div>
 
-          <div className="section-strategy__item">
+          <div className="section-strategy__politic">
+            <img src={politicaImg} alt="Politica de calidad" />
+            <div>
             <h3>Politica de Calidad</h3>
             <p>{t("pageAbout.description")}</p>
+            </div>
           </div>
         </section>
 
@@ -78,7 +81,7 @@ function About() {
             {t(`pageAbout.sectionCertificado.title`)}
           </h3>
           <img
-            src={certificadoImage}
+            src={certificadoImage2}
             alt="Certificado Digital"
             title="Certificado Digital"
             className="cetificado"

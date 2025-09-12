@@ -169,7 +169,7 @@ function Footer() {
             </svg>
           </a>
 
-          <p>Grupo Oltech 2024</p>
+          <p>Grupo Oltech 2025</p>
         </section>
       </div>
     </footer>

@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 
 function WhyChoose() {
   const nav = useNavigate();
-
+       
   const { t } = useTranslation();
 
   gsap.registerPlugin(ScrollTrigger);

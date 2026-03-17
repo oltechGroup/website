@@ -7,7 +7,6 @@ import imageObjetives from "../assets/images/oltech-objectives.jpg";
 import imageBoxs from "../assets/images/boxs-image-pexels.jpg";
 import "../styles/sections.css";
 import "./About.css";
-import certificadoImage from "../assets/images/certificado.jpg";
 import certificadoImage2 from "../assets/images/certificado_2026.jpg";
 
 import politicaImg from "../assets/icons/Politica_calidad_nueva.png"

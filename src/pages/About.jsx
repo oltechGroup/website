@@ -8,7 +8,8 @@ import imageBoxs from "../assets/images/boxs-image-pexels.jpg";
 import "../styles/sections.css";
 import "./About.css";
 import certificadoImage from "../assets/images/certificado.jpg";
-import certificadoImage2 from "../assets/images/Certificado_2025.jpg";
+import certificadoImage2 from "../assets/images/certificado_2026.jpg";
+
 import politicaImg from "../assets/icons/Politica_calidad_nueva.png"
 import { useTranslation } from "react-i18next";
 
